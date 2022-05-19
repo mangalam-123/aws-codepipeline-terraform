@@ -3,6 +3,7 @@
 variable "dns_name" {
   description = "this is the dns name"
   type = string
+  default = ""
 }
 
 resource "aws_route53_record" "myapp_dns" {
