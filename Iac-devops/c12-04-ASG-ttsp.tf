@@ -13,7 +13,7 @@ resource "aws_autoscaling_policy" "myavg_cpu_greater_than_xx" {
     target_value = 50.0
   }
 }
-/*
+
 #AL Target Request calling 
 resource "aws_autoscaling_policy" "alb_target_greater_than_yy" {
   name                   = "${local.name}-alb_target_greater_than_yy"
@@ -29,4 +29,4 @@ resource "aws_autoscaling_policy" "alb_target_greater_than_yy" {
     target_value = 10.0
   }
 }
-*/
+
