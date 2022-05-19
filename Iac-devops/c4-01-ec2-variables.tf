@@ -8,7 +8,7 @@ variable "instance_type" {
 variable "instance_keypair" {
     description = "The key pair for my ec2-instances"
     type = string
-    default = "terraform-key2"
+    default = "terraform-key"
 }
 
 variable "private-instance_count" {
