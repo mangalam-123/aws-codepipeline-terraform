@@ -28,7 +28,7 @@ phases:
     on-failure : ABORT
     commands:
       - cd "$CODEBUILD_SRC_DIR/iac-devops"
-      - ls -ltr "$CODEBUILD_SRC_DIR/iac-devops"
+      - ls -ltr "$CODEBUILD_SRC_DIR/Iac-devops"
       - terraform --version
       - terraform init -input=false --backend-config=dev.conf
       - terraform validate
