@@ -13,7 +13,7 @@ Database_subnet_group = true
 
 
 # Variables for EC2 Instance
-instance_type = "t2.micro"
+instance_type = "m4.large"
 instance_keypair = "terraform-key"
 private-instance_count = 2
 
