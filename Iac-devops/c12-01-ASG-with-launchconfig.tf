@@ -3,8 +3,8 @@
 module "autoscaling" {
   source  = "terraform-aws-modules/autoscaling/aws"
   version = "4.0.0"
-  name_prefix = "${local.name}-"
-  #use_name_prefix = false
+  name = "${local.name}-myasg"
+  use_name_prefix = false
 
   # ASG Lifecycle Hooks
   initial_lifecycle_hooks = [
