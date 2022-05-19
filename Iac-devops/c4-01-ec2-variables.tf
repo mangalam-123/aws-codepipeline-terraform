@@ -2,7 +2,7 @@
 variable "instance_type" {
     description = "The type of my ec2-instances"
     type = string
-    default = "t2.micro"
+    default = "m4.large"
 }
 
 variable "instance_keypair" {
