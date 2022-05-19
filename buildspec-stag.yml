@@ -27,7 +27,7 @@ phases:
   build:
     on-failure : ABORT
     commands:
-      - cd "$CODEBUILD_SRC_DIR/iac-devops"
+      - cd "$CODEBUILD_SRC_DIR/Iac-devops"
       - ls -ltr "$CODEBUILD_SRC_DIR/iac-devops"
       - terraform --version
       - terraform init -input=false --backend-config=stag.conf
