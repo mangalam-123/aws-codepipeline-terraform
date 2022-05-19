@@ -6,7 +6,7 @@ resource "aws_autoscaling_schedule" "increase_capacity_9am" {
   min_size               = 2
   max_size               = 10
   desired_capacity       = 6
-  start_time             = "2022-05-15T14:00:00Z"
+  start_time             = "2022-05-25T14:00:00Z"
   recurrence             = "00 09 * * *" 
   autoscaling_group_name =  module.autoscaling.autoscaling_group_id
   }
@@ -17,7 +17,7 @@ resource "aws_autoscaling_schedule" "increase_capacity_9am" {
   min_size               = 2
   max_size               = 10
   desired_capacity       = 2
-  start_time             = "2022-05-15T21:00:00Z"
+  start_time             = "2022-05-25T21:00:00Z"
   recurrence             = "00 21 * * *" 
   autoscaling_group_name =  module.autoscaling.autoscaling_group_id
   }
