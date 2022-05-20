@@ -6,7 +6,7 @@ module "acm" {
   domain_name = trimsuffix(data.aws_route53_zone.mydomain.name, ".")
   zone_id = data.aws_route53_zone.mydomain.zone_id
 
-  subject_alternative_names = [var.dns_name]
+  subject_alternative_names = ["Dev.myappstore.tech"]
 
   tags = local.common_tags
 }
