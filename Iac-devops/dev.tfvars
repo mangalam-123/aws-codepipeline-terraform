@@ -18,4 +18,4 @@ instance_keypair = "terraform-key"
 private-instance_count = 2
 
 #Dns name for dev env
-dns_name = "Deviacdevops.myappstore.tech"
+dns_name = "Dev.myappstore.tech"
