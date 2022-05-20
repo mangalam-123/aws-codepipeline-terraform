@@ -21,3 +21,9 @@ variable "Business_unit" {
   default = "SAP"
 
 }
+
+variable "dns_name" {
+  description = "this is the dns name"
+  type = string
+  default = ""
+}
