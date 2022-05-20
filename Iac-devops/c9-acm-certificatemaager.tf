@@ -7,8 +7,7 @@ module "acm" {
   zone_id = data.aws_route53_zone.mydomain.zone_id
 
   subject_alternative_names = [
-    #var.dns_name
-    "Devciacdevops.myappstore.tech"
+    var.dns_name
   ]
 
   tags = local.common_tags
