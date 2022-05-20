@@ -7,9 +7,7 @@ variable "dns_name" {
 }
 
 resource "aws_route53_record" "myapp_dns" {
-  depends_on = [
-    module.alb
-  ]
+  
   zone_id = data.aws_route53_zone.mydomain.zone_id
   name    = var.dns_name
   type    = "A"
